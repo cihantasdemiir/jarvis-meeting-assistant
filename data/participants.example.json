@@ -1,0 +1,7 @@
+[
+  {"name": "Kenan Çetin", "email": "kenan.cetin@example.com", "role": "Toplantı Başkanı"},
+  {"name": "Ayşe Yılmaz", "email": "ayse.yilmaz@example.com", "role": "Üretim Planlama"},
+  {"name": "Mehmet Öztürk", "email": "mehmet.ozturk@example.com", "role": "Kalite"},
+  {"name": "Ahmet Yılmaz", "email": "ahmet.yilmaz@example.com", "role": "Bakım"},
+  {"name": "Zeynep Şahin", "email": "zeynep.sahin@example.com", "role": "İnsan Kaynakları"}
+]

@@ -1,0 +1,5 @@
+# J.A.R.V.I.S — çekirdek bağımlılıklar
+# Klavye modu, demo, veritabanı, (Faz 3) PDF ve e-posta için yeterlidir.
+python-dotenv>=1.0
+reportlab>=4.0
+openpyxl>=3.1       # Faz 6: görev listesini Excel'e aktarma

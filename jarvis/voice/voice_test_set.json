@@ -1,0 +1,32 @@
+{
+  "description": "Sesli komut doğruluk testi (PDF Hafta 2: en az 20 komutluk tablo, hedef ≥ %85). intent=null olan satırlar normal toplantı konuşmasıdır; komut sanılmamalıdır (yanlış tetikleme ölçümü).",
+  "items": [
+    {"say": "Jarvis, toplantıyı başlat", "intent": "START_MEETING"},
+    {"say": "Jarvis, önceki toplantıyı özetle", "intent": "SUMMARIZE_PREVIOUS"},
+    {"say": "Jarvis, katılımcılar Kenan, Ayşe ve Mehmet", "intent": ["MARK_PRESENT_MANY", "MARK_PRESENT"], "params": {"names": "ayse"}},
+    {"say": "Jarvis, gündemi oku", "intent": "READ_AGENDA"},
+    {"say": "Jarvis, sıradaki madde", "intent": "NEXT_ITEM"},
+    {"say": "Jarvis, önceki madde", "intent": "PREVIOUS_ITEM"},
+    {"say": "Jarvis, söz Ayşe'de", "intent": "SET_SPEAKER", "params": {"speaker": "ayse"}},
+    {"say": "Jarvis, Mehmet konuşuyor", "intent": "SET_SPEAKER", "params": {"speaker": "mehmet"}},
+    {"say": "Jarvis, sözü bırak", "intent": "RELEASE_SPEAKER"},
+    {"say": "Jarvis, karar: yeni üretim planı pazartesi uygulanacak", "intent": "ADD_DECISION", "params": {"text": "uretim"}},
+    {"say": "Jarvis, görev: Mehmet raporu haftaya kadar hazırlasın", "intent": "ADD_ACTION", "params": {"text": "rapor"}},
+    {"say": "Jarvis, görev tamamlandı: rapor", "intent": "COMPLETE_ACTION", "params": {"query": "rapor"}},
+    {"say": "Jarvis, açık görevleri oku", "intent": "OPEN_ACTIONS"},
+    {"say": "Jarvis, not: tedarikçi ile görüşülecek", "intent": "ADD_NOTE", "params": {"text": "tedarik"}},
+    {"say": "Jarvis, otopark: ofis taşınması", "intent": "ADD_PARKING", "params": {"text": "ofis"}},
+    {"say": "Jarvis, oylama: bütçe artışı lehte beş aleyhte iki", "intent": "VOTE", "params": {"yes": "5", "no": "2"}},
+    {"say": "Jarvis, süre durumu", "intent": "TIME_STATUS"},
+    {"say": "Jarvis, kim konuşmadı", "intent": "SILENT_PARTICIPANTS"},
+    {"say": "Jarvis, gündeme ekle: bütçe, on beş dakika", "intent": "ADD_AGENDA_ITEM", "params": {"title": "butce", "minutes": "15"}},
+    {"say": "Jarvis, maddeyi ertele", "intent": "SKIP_ITEM"},
+    {"say": "Jarvis, sonraki toplantı 21 Ekim", "intent": "NEXT_MEETING", "params": {"date_text": "21"}},
+    {"say": "Jarvis, tutanak oluştur", "intent": "CREATE_MINUTES"},
+    {"say": "Jarvis, toplantıyı bitir", "intent": "END_MEETING"},
+    {"say": "Bu hafta iki hat birden bakımda olacak.", "intent": null},
+    {"say": "Raporu cuma gününe kadar bitirmeyi planlıyorum.", "intent": null},
+    {"say": "Toplantıyı başlatmadan önce kahve alalım mı?", "intent": null},
+    {"say": "Bütçe kararını bir sonraki toplantıya bırakalım.", "intent": null}
+  ]
+}

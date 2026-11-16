@@ -1,0 +1,106 @@
+# --- Gizli bilgiler ve yerel yapılandırma ---
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.pfx
+*.p12
+!tests/**/*.pem
+
+# --- Gerçek toplantı verileri (örnek dosyalar hariç) ---
+data/*
+!data/.gitkeep
+!data/*.example.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# --- Çıktılar: PDF, Excel, e-posta, takvim ---
+output/*
+!output/.gitkeep
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.eml
+*.msg
+*.ics
+
+# --- Ses dosyaları ---
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+
+# --- Loglar ---
+logs/*
+!logs/.gitkeep
+*.log
+
+# --- Kurumsal logo ve özel varlıklar ---
+assets/logo/*
+!assets/logo/.gitkeep
+assets/branding/
+assets/private/
+
+# --- Model dosyaları (Ollama, TTS, Whisper) ---
+models/
+tts_models/
+.ollama/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.ckpt
+# Font dosyaları kullanıcı tarafından eklenir (assets/fonts/README.md)
+assets/fonts/*.ttf
+assets/fonts/*.otf
+
+# --- Yedekler, yamalar, arşivler, geçici dosyalar ---
+backups/
+*.bak
+*.backup
+*.orig
+*.rej
+*.patch
+*.diff
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tmp
+*.temp
+*.swp
+*~
+tmp/
+temp/
+# Kayıt Defteri yedekleri (scripts/tolga_sapi5.ps1)
+*.reg
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# --- Editör / işletim sistemi ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

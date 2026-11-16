@@ -1,0 +1,11 @@
+# Faz 5b — Türkçe sesli yanıt: Pocket TTS Turkish (isteğe bağlı).
+# Kurulum (J.A.R.V.I.S .venv etkinken): pip install -r requirements-tts.txt
+# Hoparlör çıkışı için ayrıca requirements-voice.txt (PyAudio) gerekir.
+#
+# Sürümler, kullanıcının Windows / Python 3.13 üzerinde male_1 sesiyle WAV ürettiği kurulumla aynıdır.
+# PyTorch büyük bir pakettir (yüzlerce MB). Windows'ta PyPI'daki torch yalnızca CPU destekler; GPU için
+# docs/TURKCE_TTS.md "GPU" bölümüne bakın. Model dosyaları (~440 MB) bu dosyayla İNDİRİLMEZ:
+#   python main.py --tts-download   (onay sorulur)
+pocket-tts-turkish==0.1.0
+pocket-tts==3.3.0
+torch==2.14.1

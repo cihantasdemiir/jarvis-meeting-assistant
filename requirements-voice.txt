@@ -1,0 +1,6 @@
+# İsteğe bağlı ses bağımlılıkları (mikrofon ve sesli yanıt).
+# Kurulum: pip install -r requirements-voice.txt
+# Kurulmazsa uygulama klavye modunda ve yalnızca konsol çıktısıyla çalışır.
+pyttsx3>=2.90
+SpeechRecognition>=3.10
+PyAudio>=0.2.14

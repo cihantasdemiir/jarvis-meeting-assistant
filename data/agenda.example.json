@@ -1,0 +1,6 @@
+[
+  {"title": "Üretim planlaması", "planned_minutes": 15, "presenter": "Ayşe Yılmaz"},
+  {"title": "Kalite raporu", "planned_minutes": 10, "presenter": "Mehmet Öztürk"},
+  {"title": "Bakım takvimi", "planned_minutes": 10, "presenter": "Ahmet Yılmaz"},
+  {"title": "Diğer konular", "planned_minutes": 5}
+]

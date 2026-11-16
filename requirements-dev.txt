@@ -1,0 +1,5 @@
+# Geliştirme ve test
+-r requirements.txt
+pytest>=8.0
+pypdf>=4.0          # testlerde PDF metnini okumak için
+aiosmtpd>=1.4       # testlerde yerel (127.0.0.1) SMTP sunucusu; internete e-posta gitmez
